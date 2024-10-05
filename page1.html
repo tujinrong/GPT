@@ -5,77 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Microsoft 365 Inspired Page</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #ffffff;
-            padding: 20px;
-            border-bottom: 1px solid #e0e0e0;
-            text-align: left;
-        }
-        header h1 {
-            font-size: 24px;
-            margin: 0;
-        }
-        .main-container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .recommended, .quick-access {
-            margin-bottom: 40px;
-        }
-        h2 {
-            font-size: 20px;
-            margin-bottom: 15px;
-        }
-        .recommendations, .quick-links {
-            display: flex;
-            gap: 20px;
-        }
-        .recommendation, .quick-link {
-            background: #fff;
-            border: 1px solid #e0e0e0;
-            padding: 15px;
-            width: calc(33.333% - 13.333px);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-        }
-        .recommendation img, .quick-link img {
-            width: 100%;
-            height: 120px;
-            object-fit: cover;
-            margin-bottom: 10px;
-            background-color: #e0e0e0;
-        }
-        .recommendation p, .quick-link p {
-            margin: 0;
-            font-size: 14px;
-        }
-        footer {
-            background-color: #ffffff;
-            border-top: 1px solid #e0e0e0;
-            text-align: center;
-            padding: 15px;
-            margin-top: 40px;
-        }
-    </style>
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>Microsoft 365 へようこそ</h1>
     </header>
 
     <div class="main-container">
-        <section class="recommended">
+        <section class="recommendations">
             <h2>おすすめ</h2>
-            <div class="recommendations">
+            <div class="section-content">
                 <div class="recommendation">
                     <img src="example_thumbnail.png" alt="Recommendation Thumbnail">
                     <p>陳 文洋 さんが Teams のチャットでこれを共有しました</p>
@@ -96,17 +35,17 @@
 
         <section class="quick-access">
             <h2>クイックアクセス</h2>
-            <div class="quick-links">
+            <div class="section-content">
                 <div class="quick-link">
-                    <img src="word_icon.png" alt="Word Document">
+                    <img src="word_icon.png" alt="Quick Link Icon">
                     <p>DBに対するQA</p>
                 </div>
                 <div class="quick-link">
-                    <img src="excel_icon.png" alt="Excel Document">
+                    <img src="excel_icon.png" alt="Quick Link Icon">
                     <p>8月27日～9月11日のバグ修正・改善内容</p>
                 </div>
                 <div class="quick-link">
-                    <img src="word_icon.png" alt="Word Document">
+                    <img src="word_icon.png" alt="Quick Link Icon">
                     <p>DBQ&A</p>
                 </div>
             </div>
