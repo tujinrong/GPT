@@ -1,59 +1,175 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microsoft 365 Inspired Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>屠錦栄のホームページ</title>
+    <style>
+        /* ベーススタイルのリセット */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 全体の背景色とテキストのスタイル */
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        /* ヘッダーのスタイル */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* ナビゲーションリンクのスタイル */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* セクションのスタイル */
+        section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* ポートフォリオアイテムのスタイル */
+        .portfolio-item {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+
+        /* フォームのスタイル */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin: 10px 0 5px;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        form button {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        /* フッターのスタイル */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header class="header">
-        <h1>Microsoft 365 へようこそ</h1>
+    <header>
+        <h1>屠錦栄のホームページ</h1>
+        <nav>
+            <ul>
+                <!-- ナビゲーションリンク -->
+                <li><a href="#about">自己紹介</a></li>
+                <li><a href="#portfolio">ポートフォリオ</a></li>
+                <li><a href="#contact">連絡先</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="main-container">
-        <section class="recommendations">
-            <h2>おすすめ</h2>
-            <div class="section-content">
-                <div class="recommendation">
-                    <img src="example_thumbnail.png" alt="Recommendation Thumbnail">
-                    <p>陳 文洋 さんが Teams のチャットでこれを共有しました</p>
-                    <p>9月17日</p>
-                </div>
-                <div class="recommendation">
-                    <img src="example_thumbnail.png" alt="Recommendation Thumbnail">
-                    <p>卞 晨東 さんが Teams のチャットでこれを共有しました</p>
-                    <p>9月18日</p>
-                </div>
-                <div class="recommendation">
-                    <img src="example_thumbnail.png" alt="Recommendation Thumbnail">
-                    <p>陳 文洋 さんと他 1 人がこれを編集しました</p>
-                    <p>9月20日</p>
-                </div>
-            </div>
-        </section>
+    <section id="about">
+        <h2>自己紹介</h2>
+        <!-- 自己紹介のテキスト -->
+        <p>こんにちは、屠錦栄です。上海出身で、清華大学と上海交通大学に通っていました。現在、AIplus株式会社でシステム開発に携わっています。物理学やAI技術に興味があり、日々新しいことを学んでいます。</p>
+    </section>
 
-        <section class="quick-access">
-            <h2>クイックアクセス</h2>
-            <div class="section-content">
-                <div class="quick-link">
-                    <img src="word_icon.png" alt="Quick Link Icon">
-                    <p>DBに対するQA</p>
-                </div>
-                <div class="quick-link">
-                    <img src="excel_icon.png" alt="Quick Link Icon">
-                    <p>8月27日～9月11日のバグ修正・改善内容</p>
-                </div>
-                <div class="quick-link">
-                    <img src="word_icon.png" alt="Quick Link Icon">
-                    <p>DBQ&A</p>
-                </div>
-            </div>
-        </section>
-    </div>
+    <section id="portfolio">
+        <h2>ポートフォリオ</h2>
+        <!-- ポートフォリオの説明 -->
+        <p>ここでは、私が関わったプロジェクトを紹介します。</p>
+        <div class="portfolio-item">
+            <h3>健康管理システム</h3>
+            <!-- プロジェクトの説明 -->
+            <p>健康管理のためのシステムを開発しました。C#およびVue.jsを使用して、バックエンドとフロントエンドを構築しています。</p>
+        </div>
+        <!-- 他のプロジェクトもここに追加できます -->
+    </section>
+
+    <section id="contact">
+        <h2>連絡先</h2>
+        <p>ご連絡は以下のフォームからどうぞ。</p>
+        <form>
+            <!-- 名前入力フィールド -->
+            <label for="name">お名前:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <!-- メールアドレス入力フィールド -->
+            <label for="email">メールアドレス:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <!-- メッセージ入力フィールド -->
+            <label for="message">メッセージ:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <!-- 送信ボタン -->
+            <button type="submit">送信</button>
+        </form>
+    </section>
 
     <footer>
-        <p>&copy; <script>document.write(new Date().getFullYear());</script> Microsoft 365 Inspired Page. All rights reserved.</p>
+        <!-- フッター部分 -->
+        <p>&copy; 2024 屠錦栄. All Rights Reserved.</p>
     </footer>
+    
+    <!-- 外部JavaScriptファイルのリンク -->
+    <script src="script.js"></script>
 </body>
 </html>
